@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Pensiunea Casa Munților, Cazare, munte ">
+  <meta name="description"
+    content="Acest site este dedicat Pensiunii Casa Munților, un refugiu fermecător situat în inima Carpaților României, ideal pentru iubitorii de natură, relaxare și aventură. Site-ul oferă informații detaliate despre locație, serviciile oferite și tipurile de camere disponibile, toate concepute pentru a asigura o experiență autentică și confortabilă de vacanță. Aici, vizitatorii pot afla despre activitățile disponibile pe tot parcursul anului, de la drumeții și excursii montane până la sporturi de iarnă. Pentru cei interesați de o evadare în natură, pagina de contact oferă detalii pentru rezervări și informații suplimentare, pentru o experiență completă în mijlocul naturii românești.">
+  <meta name="author" content="Bogoslov Cristina-Maria">
+  <title>Pensiunea Casa Munților</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+
+    }
+
+
+    nav {
+      background-color: lightpink
+    }
+
+
+    nav a:hover {
+      background-color: #E1DEE9;
+      color: black;
+    }
+
+
+    footer {
+      background-color: lightpink;
+    }
+
+    .card {
+     border-color: lightpink;
+    
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <!-- Logo și H1 -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo-pensiune.png"
+          alt="O ilustrație cu o cabană la munte, reprezentativă pentru pensiunea Casa Munților"
+          class="d-inline-block align-text-top" style="height: 40px;">
+        <h1 class="ms-2 mb-0" style="font-size: 1.5rem;">Pensiunea Casa Munților</h1>
+      </a>
+      <!-- Buton Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Meniu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#despre-noi">Despre noi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicii">Servicii</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#preturi">Prețuri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#localizare">Unde ne găsiți?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--carusel-->
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pensiunea-caprioara-2.jpg" class="d-block w-100"
+          alt="Pensiunea Casa Munților situată la poalele munților, acoperită cu un strat de zăpadă">
+      </div>
+      <div class="carousel-item">
+        <img src="pensiunea-casa-muntilor.jpg" class="d-block w-100"
+          alt="Pensiunea Casa Munților capturată de la depărtare, fiind înconjurată de pădure">
+      </div>
+      <div class="carousel-item">
+        <img src="piscina-exterioara.jpg" class="d-block w-100" alt="Piscina exterioară a pensiunii">
+      </div>
+      <div class="carousel-item">
+        <img src="am-fost-la-munte-si-mi-a-placut.jpg" class="d-block w-100"
+          alt="O femeie care se relaxează în piscinsa interioară a pensiunii">
+      </div>
+      <div class="carousel-item">
+        <img src="adult-sauna.jpg" class="d-block w-100" alt="O femeie care se relaxează în sauna cu aburi">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Despre Noi -->
+
+  <div id="despre-noi">
+    <div class="container text-center">
+      <h2>Despre noi</h2>
+      <p>Pensiunea noastră este locul ideal pentru cei care își doresc să se deconecteze de la agitația orașului și să
+        se bucure de natura pură.
+        Am început ca o mică afacere de familie, iar astăzi suntem una dintre cele mai căutate locații din zonă. Dorim
+        să
+        oferim o experiență autentică fiecărui oaspete.
+        Scopul nostru este să creăm un mediu relaxant și plin de ospitalitate, astfel încât fiecare vizitator să plece
+        cu
+        amintiri de neuitat.</p>
+
+
+      <h3>Ce ne face unici?</h3>
+      <p>Oaspeții noștri apreciază atmosfera autentică, ospitalitatea personalului nostru și atenția la detalii. Fiecare
+        cameră este decorată cu elemente tradiționale locale, iar mâncarea servită este preparată cu ingrediente
+        proaspete din surse locale.</p>
+      <p>Fie că doriți să vă relaxați pe terasa însorită sau să explorați potecile montane, pensiunea noastră este locul
+        ideal pentru o escapadă perfectă.</p>
+
+      <div class="container">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <img src="hol.jpg" class="card-img-top"
+                alt="O sufragerie rustică, mobila care predomină fiind de lemn și o lustră elegantă">
+              <div class="card-body">
+                <h4 class="card-title">Sufragerie Rustică</h4>
+                <p class="card-text">Explorați farmecul sufrageriei npastre rustice, unde mobilierul din lemn masiv
+                  completează atmosfera caldă și primitoare. Lustra elegantă adaugă o notă de rafinament.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <img src="couple-corect.jpg" class="card-img-top" alt="Un cuplu care se Îmbrățișează pe o canapea">
+              <div class="card-body">
+                <h4 class="card-title">Cuplu în Relaxare</h4>
+                <p class="card-text">Un moment de intimitate și confort, surprins într-o îmbrățișare caldă pe canapea.
+                  Pensiunea noastră oferă un cadru perfect pentru a petrece timp de calitate alături de persoana iubită.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <img src="foc.jpg" class="card-img-top" alt="Lemne de foc arzând în șemineu ">
+              <div class="card-body">
+                <h4 class="card-title">Relaxare la șemineu</h4>
+                <p class="card-text">Lemnul trosnește ușor, iar flăcările creează o atmosferă de poveste. Șemineul
+                  nostru transformă fiecare seară într-un moment de relaxare, perfect pentru a te bucura de confortul și
+                  magia muntelui.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <img src="mic-dejun-cu-pisicu-corect.jpg" class="card-img-top"
+                alt="Micul dejun servit la pat cu o pisicuță portocalie lângă">
+              <div class="card-body">
+                <span class="badge bg-success mb-2">Animal Friends Welcome</span>
+                <h4 class="card-title">Mic Dejun la Pat</h4>
+                <p class="card-text">Acum oaspeții pot aduce și animăluțele de companie pentru doar 50 de lei/noapte!
+                  Savurați un mic dejun delicios la pat, în compania celor mai dragi ființe. O dimineață perfectă plină
+                  de căldură și liniște.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Card 5 -->
+          <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <img src="bar-corectat.jpg" class="card-img-top"
+                alt="Un bar rustic cu rafturi pline cu sticle de băutură">
+              <div class="card-body">
+                <span class="badge bg-warning mb-2">Recomandat</span>
+                <h4 class="card-title">Bar Rustic</h4>
+                <p class="card-text">Descoperiți barul nostru rustic cu rafturi elegante, pline cu sticle de băuturi
+                  fine.
+                  Atmosfera caldă și autentică vă invită să vă bucurați de momente memorabile.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100">
+              <img src="am-fost-la-munte-si-mi-a-placut.jpg" class="card-img-top"
+                alt="O femeie care se relaxează în piscina exterioară încălzită">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Nou</span>
+                <h4 class="card-title">Relaxare la Piscină</h4>
+                <p class="card-text">Bucurați-vă de o relaxare deplină în piscina exterioară încălzită, recent
+                  inaugurată, cu o
+                  priveliște de munte spectaculoasă. Un refugiu perfect pentru revitalizare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Servicii -->
+  <div class="container text-center">
+    <div id="servicii">
+
+      <h2>Servicii</h2>
+      <p>Oferim o gamă largă de servicii pentru a vă asigura un sejur cât mai plăcut și relaxant.</p>
+
+      <h3>Cazare</h3>
+      <p>Camerele noastre sunt echipate cu toate facilitățile necesare, inclusiv Wi-Fi gratuit, televiziune prin
+        cablu
+        și paturi confortabile.</p>
+
+      <!--grup carduri-->
+      <div class="card-group">
+        <div class="card">
+          <img src="camera-standard-corect.jpg" class="card-img-top" alt="Cameră spațioasă cu pat dublu">
+          <div class="card-body">
+            <h4 class="card-title">Camere Standard</h4>
+            <p class="card-text">Camera Standard îți oferă tot ce ai nevoie pentru o ședere relaxantă. Cu un design
+              plăcut, mobilier funcțional și o atmosferă primitoare, această cameră este ideală pentru cei care
+              caută
+              liniște și confort. Dotată cu pat confortabil, TV și Wi-Fi gratuit, este locul perfect pentru odihnă.
+            </p>
+            <span class="badge text-bg-dark">160 lei/noapte</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="camera-family-corectat.jpg" class="card-img-top"
+            alt="Cameră cu pat matrimonial și detalii de lemn, spațioasă">
+          <div class="card-body">
+            <h4 class="card-title">Camere Family</h4>
+            <p class="card-text">Camera Family este special concepută pentru a găzdui întreaga familie. Cu spațiu
+              amplu,
+              paturi confortabile pentru toți membrii și un decor cald, această cameră devine refugiul perfect
+              pentru
+              vacanțele voastre. Facilitățile moderne și zonele dedicate relaxării asigură o experiență fără griji,
+              plină
+              de bucurie.</p>
+            <span class="badge text-bg-dark">200 lei/noapte</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="camera-deluxe-corectat.jpg" class="card-img-top" alt="Cameră cu pat matrimonial și balcon">
+          <div class="card-body">
+            <h4 class="card-title">Camere Deluxe</h4>
+            <p class="card-text">Camera Deluxe redefinește luxul, oferindu-ți un spațiu generos și un design
+              sofisticat.
+              Mobilierul premium, patul king-size și atenția la detalii îți asigură o ședere memorabilă. Completează
+              experiența cu facilitățile exclusiviste, cum ar fi jacuzzi-ul și balconul cu o vedere spectaculoasă,
+              perfecte pentru un răsfăț de neuitat.</p>
+            <span class="badge text-bg-dark">300 lei/noapte</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <h3>Restaurant</h3>
+    <p>Restaurantul nostru vă întâmpină cu preparate tradiționale și internaționale, pregătite cu pasiune și din
+      ingrediente locale proaspete.</p>
+
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="breakfast2.jpg" class="card-img-top" alt="Un mic dejun cuprinzător">
+          <div class="card-body">
+            <h4 class="card-title">Începe ziua cu gust!</h4>
+            <p class="card-text">La pensiunea noastră, micul dejun este un festin al simțurilor, cu produse
+              proaspete și
+              arome autentice. De la omlete pufoase și brânzeturi locale, la gemuri de casă și pâine caldă, fiecare
+              masă
+              e gândită să-ți ofere energie și bucurie. Perfect pentru un start de zi memorabil!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="soup.jpg" class="card-img-top" alt="Un bol plin cu supă">
+          <div class="card-body">
+            <h4 class="card-title">O masă ca acasă!</h4>
+            <p class="card-text">Bucură-te de un prânz delicios, pregătit cu pasiune din ingrediente proaspete, de
+              sezon. Supă aburindă, feluri principale savuroase și deserturi alese – toate îți aduc gustul autentic
+              al
+              bucătăriei noastre tradiționale. O pauză perfectă pentru trup și suflet!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="bbq-cichin.jpg" class="card-img-top" alt="Aripioare de pui în sos bbq">
+          <div class="card-body">
+            <h4 class="card-title">Relaxare și răsfăț culinar!</h4>
+            <p class="card-text">Transformă-ți serile într-o experiență unică cu cina la pensiunea noastră.
+              Preparatele
+              noastre, de la specialități tradiționale la arome moderne, sunt servite într-o atmosferă caldă și
+              primitoare. Savurează o masă delicioasă și încheie ziua cu gust!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="berries-blueberries-cake.jpg" class="card-img-top" alt="O felie de cheesecake cu afine">
+          <div class="card-body">
+            <h4 class="card-title">Descoperă dulciurile noastre de poveste!</h4>
+            <p class="card-text">La pensiunea noastră, deserturile sunt create cu dragoste, folosind rețete
+              tradiționale
+              și ingrediente locale de cea mai bună calitate. Fie că savurezi o prăjitură proaspătă, un cozonac
+              pufos
+              sau o înghețată artizanală, fiecare desert este o experiență ce îți răsfață simțurile și îți aduce
+              bucurie. Te așteptăm să transformi fiecare moment într-o clipă dulce de neuitat!.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h3>Activități</h3>
+    <p>Vă oferim o varietate de activități pentru a vă bucura de timpul petrecut la pensiunea noastră, fie că
+      sunteți un
+      iubitor al naturii sau căutați relaxare.</p>
+
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <!-- Imaginea -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="barca.jpg" alt="Un lac la poalele munților cu un ponton de lemn și o bărcuță la mal"
+            class="img-fluid rounded">
+        </div>
+
+        <!-- Acordeonul -->
+        <div class="col-md-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Drumeții
+                </button>
+              </h4>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Aventura începe aici!.</strong> Descoperă frumusețile naturii înconjurătoare prin traseele
+                  de drumeție și plimbările cu barca pe care le oferim. De la poteci ușor accesibile la trasee mai
+                  provocatoare, fiecare pas
+                  te
+                  aduce
+                  mai aproape de peisaje spectaculoase și momente de neuitat. Îmbrățișează aerul proaspăt, sunetele
+                  naturii și
+                  bucuria explorării!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Sporturi de iarnă
+                </button>
+              </h4>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Aventura începe aici!.</strong> Descoperă frumusețile naturii înconjurătoare prin traseele
+                  de
+                  drumeție pe care le oferim. De la poteci ușor accesibile la trasee mai provocatoare, fiecare pas
+                  te
+                  aduce
+                  mai aproape de peisaje spectaculoase și momente de neuitat. Îmbrățișează aerul proaspăt, sunetele
+                  naturii și
+                  bucuria explorării!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Relaxare la șemineu
+                </button>
+              </h4>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Căldura perfectă pentru suflet!</strong> După o zi plină de aventuri, te așteptăm să te
+                  relaxezi
+                  lângă șemineul nostru primitor. Cu o băutură caldă în mână și sunetul lemnelor trosnind, vei simți
+                  cum
+                  liniștea și confortul te învăluie. Momentele de relaxare la șemineu sunt esența răsfățului și a
+                  atmosferei
+                  intime.
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <h2 class="text-center my-4">Prețuri</h2>
+        <div id="preturi">
+          <div class="container text-center">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title">Cazare</h3>
+                    <p class="card-text">
+                      Prețurile pentru camere încep de la 160 RON/noapte pentru o cameră standard și ajung până la
+                      300
+                      RON/noapte pentru apartamentele deluxe. Reduceri disponibile pentru sejururi mai lungi.
+                    </p>
+                    <span class="badge rounded-pill text-bg-dark">Rezervă o cameră</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title">Restaurant</h3>
+                    <p class="card-text">
+                      Meniul à la carte include preparate începând de la 25 RON. Pentru o experiență completă,
+                      puteți
+                      opta pentru meniurile noastre zilnice de prânz, la doar 50 RON.
+                    </p>
+                    <span class="badge rounded-pill text-bg-dark">Vezi meniul complet</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title">Activități</h3>
+                    <p class="card-text">
+                      Drumețiile și activitățile de relaxare sunt incluse în prețul cazării. Sporturile de iarnă au
+                      tarife speciale, cum ar fi închirierea echipamentelor de schi la 100 RON/zi, iar prețul unei
+                      plimbări cu barca depinde de durata pe care o selectați.
+                    </p>
+                    <span class="badge rounded-pill text-bg-dark">Află mai mult</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="localizare">
+    <div class="container text-center">
+      <h2>Unde ne găsiți?</h2>
+
+      <p>Pensiunea noastră este situată într-un peisaj idilic, ușor accesibil din centrul orașului, dar
+        suficient de
+        retrasă pentru a vă bucura de liniștea naturii. Mai jos găsiți locația noastră exactă.</p>
+      <p>Adresă: Strada Principală, nr. 1, Satul de Munte, Jud. Brașov</p>
+
+      <div class="d-flex justify-content-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89245.21660693042!2d25.514061734658913!3d45.652568478855265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b862aa214f1%3A0x6cf5f2ef54391e0f!2zQnJhyJlvdg!5e0!3m2!1sro!2sro!4v1732658207076!5m2!1sro!2sro"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer mt-5 border-top py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Title -->
+        <div class="col-md-6 d-flex align-items-center mb-3 mb-md-0">
+          <div class="d-flex align-items-center">
+            <img src="logo-pensiune.png"
+              alt="Ilustrația unei cabane de la munte, reprezentativă pentru pensiunea Casa Munților"
+              style="width: 40px; height: auto;" class="me-2">
+            <span class="fw-bold text-dark">Pensiunea Casa Munților</span>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-md-6">
+          <ul class="list-unstyled mb-0 text-md-end text-center">
+            <li>
+              <span class="fw-bold">Email:</span> pensiuneacasamuntilor@example.com
+            </li>
+            <li>
+              <span class="fw-bold">Telefon:</span> +40 123 456 789
+            </li>
+            <li class="mt-2">
+              <!-- Social icons -->
+              <a href="https://www.facebook.com" target="_blank" class="me-3" aria-label="Facebook">
+                <img src="facebook.png" alt="Logo Facebook" style="width: 24px; height: auto;">
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="me-3" aria-label="Instagram">
+                <img src="instagram.png" alt="Logo Instagram" style="width: 24px; height: auto;">
+              </a>
+              <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <img src="twitter.png" alt="Fostul logo de la Twitter" style="width: 24px; height: auto;">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer text -->
+      <div class="text-center mt-3">
+        <small class="text-muted">© 2025 Pensiunea Casa Munților. Toate drepturile rezervate.</small>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
